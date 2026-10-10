@@ -18,7 +18,7 @@
   {
     "playerId": "P004",
     "difficulty": 4,
-    "kills": 747
+    "kills": 749
   },
   {
     "playerId": "P005",
@@ -94,5 +94,10 @@
     "playerId": "P019",
     "difficulty": 2,
     "kills": 742
+  },
+  {
+    "playerId": "P020",
+    "difficulty": 3,
+    "kills": 747
   }
 ]
