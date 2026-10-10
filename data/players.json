@@ -17,37 +17,37 @@
   },
   {
     "id": "P004",
-    "name": "プレイヤーD",
-    "icon": "icons/P004.png"
+    "name": "るち",
+    "icon": "icons/P004.JPG"
   },
   {
     "id": "P005",
-    "name": "プレイヤーE",
-    "icon": "icons/P005.png"
+    "name": "ぴの",
+    "icon": "icons/P005.JPG"
   },
   {
     "id": "P006",
-    "name": "プレイヤーF",
-    "icon": "icons/P006.png"
+    "name": "おぎゃるまる",
+    "icon": "icons/P006.JPG"
   },
   {
     "id": "P007",
     "name": "プレイヤーG",
-    "icon": "icons/P007.png"
+    "icon": "icons/P007.JPG"
   },
   {
     "id": "P008",
     "name": "プレイヤーH",
-    "icon": "icons/P008.png"
+    "icon": "icons/P008.JPG"
   },
   {
     "id": "P009",
     "name": "プレイヤーI",
-    "icon": "icons/P009.png"
+    "icon": "icons/P009.JPG"
   },
   {
     "id": "P010",
     "name": "プレイヤーJ",
-    "icon": "icons/P010.png"
+    "icon": "icons/P010.JPG"
   }
 ]
