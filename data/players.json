@@ -64,5 +64,10 @@
     "id": "P013",
     "name": "たむ",
     "icon": "icons/P013.JPG"
+  },
+  {
+    "id": "P014",
+    "name": "過労キティ",
+    "icon": "icons/P014.JPG"
   }
 ]
