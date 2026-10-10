@@ -69,5 +69,20 @@
     "id": "P014",
     "name": "過労キティ",
     "icon": "icons/P014.JPG"
+  },
+  {
+    "id": "P015",
+    "name": "まっど",
+    "icon": "icons/P015.JPG"
+  },
+  {
+    "id": "P016",
+    "name": "あかり",
+    "icon": "icons/P016.JPG"
+  },
+  {
+    "id": "P017",
+    "name": "バベル",
+    "icon": "icons/P017.JPG"
   }
 ]
