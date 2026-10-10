@@ -1,0 +1,469 @@
+
+/* =========================
+   基本設定
+========================= */
+
+:root {
+  --background: #fff9ed;
+  --surface: #ffffff;
+  --text: #3d3547;
+  --muted: #81788a;
+  --border: #eee5d8;
+  --purple: #8270d8;
+  --purple-light: #f1edff;
+  --gold: #e8bd4e;
+  --gold-bg: #fff5d7;
+  --silver: #aab6c5;
+  --silver-bg: #f1f4f8;
+  --bronze: #c68b62;
+  --bronze-bg: #fff0e5;
+  --shadow: 0 3px 12px rgba(82, 62, 91, 0.07);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Noto Sans JP",
+    sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--purple);
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* =========================
+   ヘッダー
+========================= */
+
+.site-header {
+  background: linear-gradient(
+    135deg,
+    #fff2c9 0%,
+    #fff8e8 48%,
+    #f0ebff 100%
+  );
+  border-bottom: 1px solid #eee3d4;
+}
+
+.header-inner {
+  width: min(100% - 32px, 900px);
+  margin: 0 auto;
+  padding: 28px 0 25px;
+  text-align: center;
+}
+
+.community-name {
+  margin: 0 0 7px;
+  color: #88729b;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: clamp(23px, 5vw, 34px);
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+
+.header-description {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* =========================
+   メインコンテンツ
+========================= */
+
+.container {
+  width: min(100% - 32px, 760px);
+  margin: 0 auto;
+  padding: 26px 0 44px;
+}
+
+/* シーズン画像 */
+
+.season-section {
+  width: 100%;
+  min-width: 0;
+  margin: 0 0 27px;
+  padding: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.season-image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 旧シーズン見出し用 */
+
+.section-label {
+  margin: 0 0 4px;
+  color: var(--purple);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.season-section h2 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.season-section > p:last-child {
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.ranking-section > h2 {
+  margin: 0 0 15px;
+  font-size: 21px;
+}
+
+.ranking-message {
+  padding: 23px 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* =========================
+   ランキングリスト
+========================= */
+
+.ranking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+}
+
+.ranking-list-title {
+  margin: 0 0 3px;
+  padding: 0 2px 5px;
+  font-size: 15px;
+}
+
+.ranking-row {
+  display: grid;
+  grid-template-columns: 38px 48px minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 11px;
+  min-width: 0;
+  padding: 12px 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.ranking-position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 34px;
+  min-height: 34px;
+  border-radius: 10px;
+  background: #f5f0e8;
+  color: #776b5c;
+  font-size: 15px;
+  font-weight: 800;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.ranking-icon {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #eee8f4;
+  border-radius: 50%;
+  background: #f1edf6;
+  object-fit: cover;
+}
+
+.ranking-player {
+  min-width: 0;
+}
+
+.ranking-name {
+  overflow-wrap: anywhere;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.ranking-difficulty {
+  display: inline-block;
+  margin: 5px 0 0;
+  padding: 2px 8px;
+  background: var(--purple-light);
+  border-radius: 20px;
+  color: #6f5bbd;
+  font-size: 11px;
+  font-weight: 700;
+  justify-self: end;
+  white-space: nowrap;
+}
+
+.ranking-score {
+  white-space: nowrap;
+  color: #40374a;
+  font-size: 19px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.ranking-score small {
+  margin-left: 3px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* =========================
+   1位：ゴールド
+========================= */
+
+.ranking-row.rank-row-1 {
+  background: linear-gradient(
+    105deg,
+    #fff6d9 0%,
+    #fffdf5 100%
+  );
+  border: 2px solid #e8c65f;
+  box-shadow: 0 4px 14px rgba(206, 159, 46, 0.13);
+}
+
+.rank-row-1 .ranking-position {
+  background: #f5d46c;
+  color: #74500b;
+  font-size: 22px;
+}
+
+.rank-row-1 .ranking-icon {
+  border-color: #e8c65f;
+}
+
+.rank-row-1 .ranking-name {
+  color: #765313;
+  font-size: 15px;
+}
+
+.rank-row-1 .ranking-score {
+  color: #805b0e;
+  font-size: 21px;
+}
+
+/* =========================
+   2位：シルバー
+========================= */
+
+.ranking-row.rank-row-2 {
+  background: linear-gradient(
+    105deg,
+    #f0f3f8 0%,
+    #ffffff 100%
+  );
+  border-color: #d1d9e4;
+}
+
+.rank-row-2 .ranking-position {
+  background: #dce3ec;
+  color: #58677b;
+  font-size: 21px;
+}
+
+.rank-row-2 .ranking-icon {
+  border-color: #c9d2df;
+}
+
+.rank-row-2 .ranking-score {
+  color: #4c5a6d;
+}
+
+/* =========================
+   3位：ブロンズ
+========================= */
+
+.ranking-row.rank-row-3 {
+  background: linear-gradient(
+    105deg,
+    #fff0e5 0%,
+    #ffffff 100%
+  );
+  border-color: #e9c6ac;
+}
+
+.rank-row-3 .ranking-position {
+  background: #edc3a3;
+  color: #854f2c;
+  font-size: 21px;
+}
+
+.rank-row-3 .ranking-icon {
+  border-color: #e2b899;
+}
+
+.rank-row-3 .ranking-score {
+  color: #875536;
+}
+
+/* =========================
+   過去シーズン
+========================= */
+
+.history-navigation {
+  margin-top: 28px;
+  text-align: center;
+}
+
+.history-navigation a {
+  display: inline-block;
+  padding: 12px 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: #6f5bbd;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+}
+
+.history-navigation a:hover {
+  background: var(--purple-light);
+}
+
+/* =========================
+   フッター
+========================= */
+
+.site-footer {
+  padding: 22px 16px;
+  border-top: 1px solid var(--border);
+  background: #fffdf8;
+  color: var(--muted);
+  text-align: center;
+  font-size: 12px;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+/* =========================
+   スマートフォン対応
+========================= */
+
+@media (max-width: 480px) {
+  .header-inner {
+    padding: 23px 0;
+  }
+
+  .container {
+    width: calc(100% - 20px);
+    padding-top: 20px;
+  }
+
+  .season-section {
+    margin-bottom: 23px;
+    padding: 12px;
+    border-radius: 15px;
+  }
+
+  .ranking-section > h2 {
+    font-size: 19px;
+  }
+
+  .ranking-list {
+    gap: 8px;
+  }
+
+  .ranking-row {
+    grid-template-columns: 31px 41px minmax(0, 1fr) auto auto;
+    gap: 7px;
+    padding: 10px 8px;
+    border-radius: 12px;
+  }
+
+  .ranking-position {
+    min-width: 29px;
+    min-height: 31px;
+    border-radius: 8px;
+    font-size: 13px;
+  }
+
+  .ranking-icon {
+    width: 41px;
+    height: 41px;
+  }
+
+  .ranking-name {
+    font-size: 13px;
+  }
+
+  .ranking-difficulty {
+    margin-top: 4px;
+    padding: 2px 7px;
+    font-size: 10px;
+  }
+
+  .ranking-score {
+    font-size: 15px;
+  }
+
+  .ranking-score small {
+    margin-left: 2px;
+    font-size: 10px;
+  }
+
+  .rank-row-1 .ranking-position,
+  .rank-row-2 .ranking-position,
+  .rank-row-3 .ranking-position {
+    font-size: 19px;
+  }
+
+  .rank-row-1 .ranking-name {
+    font-size: 13px;
+  }
+
+  .rank-row-1 .ranking-score {
+    font-size: 17px;
+  }
+}

@@ -1,0 +1,53 @@
+
+[
+  {
+    "id": "P001",
+    "name": "ちくちく",
+    "icon": "icons/P001.png"
+  },
+  {
+    "id": "P002",
+    "name": "ウミミ",
+    "icon": "icons/P002.webp"
+  },
+  {
+    "id": "P003",
+    "name": "プレイヤーC",
+    "icon": "icons/P003.png"
+  },
+  {
+    "id": "P004",
+    "name": "プレイヤーD",
+    "icon": "icons/P004.png"
+  },
+  {
+    "id": "P005",
+    "name": "プレイヤーE",
+    "icon": "icons/P005.png"
+  },
+  {
+    "id": "P006",
+    "name": "プレイヤーF",
+    "icon": "icons/P006.png"
+  },
+  {
+    "id": "P007",
+    "name": "プレイヤーG",
+    "icon": "icons/P007.png"
+  },
+  {
+    "id": "P008",
+    "name": "プレイヤーH",
+    "icon": "icons/P008.png"
+  },
+  {
+    "id": "P009",
+    "name": "プレイヤーI",
+    "icon": "icons/P009.png"
+  },
+  {
+    "id": "P010",
+    "name": "プレイヤーJ",
+    "icon": "icons/P010.png"
+  }
+]
