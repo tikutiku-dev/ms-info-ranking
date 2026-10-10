@@ -89,5 +89,10 @@
     "id": "P018",
     "name": "3KAMI",
     "icon": "icons/P018.JPG"
+  },
+  {
+    "id": "P019",
+    "name": "おむ",
+    "icon": "icons/P019.JPG"
   }
 ]
