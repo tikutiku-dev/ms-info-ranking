@@ -49,5 +49,10 @@
     "id": "P010",
     "name": "きむ",
     "icon": "icons/P010.JPG"
+  },
+  {
+    "id": "P011",
+    "name": "ぽにょ",
+    "icon": "icons/P011.JPG"
   }
 ]
