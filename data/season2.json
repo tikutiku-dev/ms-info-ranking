@@ -37,17 +37,17 @@
   },
   {
     "playerId": "P008",
-    "difficulty": 2,
-    "kills": 700
+    "difficulty": 3,
+    "kills": 746
   },
   {
     "playerId": "P009",
-    "difficulty": 2,
-    "kills": 400
+    "difficulty": 3,
+    "kills": 747
   },
   {
     "playerId": "P010",
-    "difficulty": 1,
-    "kills": 300
+    "difficulty": 4,
+    "kills": 733
   }
 ]
