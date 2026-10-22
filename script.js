@@ -119,7 +119,7 @@ function validateData(players, records) {
       typeof record.playerId !== "string" ||
       !Number.isInteger(record.difficulty) ||
       record.difficulty < 1 ||
-      record.difficulty > 4 ||
+      record.difficulty > 6 ||
       !Number.isInteger(record.kills) ||
       record.kills < 0 ||
       record.kills > 750
