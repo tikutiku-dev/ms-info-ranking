@@ -68,8 +68,7 @@ async function initializeRanking() {
     renderSeason(currentSeason);
     renderRanking(ranking);
 
-    elements.historyNavigation.hidden =
-      config.showHistoryLink !== true;
+    renderHistoryLinks(currentSeason);
 
     if (ranking.length === 0) {
       showMessage("まだランキングの記録がありません。");
@@ -348,5 +347,24 @@ function showMessage(message) {
 /* =========================
    実行
 ========================= */
+
+/* =========================
+   過去シーズンへのリンク
+========================= */
+
+function renderHistoryLinks(currentSeason) {
+  const navigation = elements.historyNavigation;
+  navigation.replaceChildren();
+
+  for (let season = currentSeason - 1; season >= 2; season--) {
+    const link = document.createElement("a");
+    link.href = `season${season}.html`;
+    link.textContent = `シーズン${season}のランキングを見る`;
+
+    navigation.appendChild(link);
+  }
+
+  navigation.hidden = navigation.childElementCount === 0;
+}
 
 initializeRanking();

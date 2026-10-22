@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <link rel="icon" type="image/png" href="images/favicon.webp">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="モンスターサバイバル情報共有！ ゾンビラッシュランキング">
+  <title>ゾンビラッシュランキング | モンスターサバイバル情報共有！</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="season2.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="community-name">モンスターサバイバル情報共有！</p>
+      <h1>ゾンビラッシュ キルランキング</h1>
+    </div>
+  </header>
+
+<main class="container">
+  <!--
+    <section class="season-section" aria-labelledby="season-title">
+    <h2 id="season-title">シーズン2</h2>
+  </section>
+  -->
+
+  <section class="season-section" aria-label="現在のシーズン">
+    <img
+      id="season-image"
+      class="season-image"
+      src="images/season2.jpg"
+      alt="シーズン2"
+    >
+  </section>
+
+  <section class="ranking-section" aria-labelledby="ranking-title">
+
+    <div id="ranking-message" class="ranking-message" role="status">
+      ランキングを読み込んでいます…
+    </div>
+
+    <div id="top-three" class="top-three" hidden></div>
+
+    <div id="ranking-list" class="ranking-list" hidden></div>
+  </section>
+
+  <img src="images/D4_Clear_ogyaruchi.png" alt="難易度4クリア編成" style="display: block; max-width: 100%; height: auto; margin: 20px auto;">
+
+  </main>
+
+</body>
+</html>
